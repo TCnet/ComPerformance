@@ -1,0 +1,1001 @@
+ERROR 2014-05-18 10:22:29 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 29, in _wrapped_view
+    resolve_url(login_url or settings.LOGIN_URL))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 151, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 496, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 382, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 297, in reverse_dict
+    self._populate()
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\importlib.py", line 35, in import_module
+    __import__(name)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\grade.py", line 15, in <module>
+    from xlrd import open_workbook,cellname
+ImportError: No module named xlrd
+ERROR 2014-05-18 10:22:30 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /favicon.ico status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "E:\Program Files\Python27\lib\site-packages\django\middleware\common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 104, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import django.views.generic.simple.redirect_to. Parent module django.views.generic.simple does not exist.
+ERROR 2014-05-18 10:25:00 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 29, in _wrapped_view
+    resolve_url(login_url or settings.LOGIN_URL))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 151, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 496, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 382, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 297, in reverse_dict
+    self._populate()
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 104, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import django.views.generic.simple.redirect_to. Parent module django.views.generic.simple does not exist.
+ERROR 2014-05-18 10:25:01 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /favicon.ico status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "E:\Program Files\Python27\lib\site-packages\django\middleware\common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 104, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import django.views.generic.simple.redirect_to. Parent module django.views.generic.simple does not exist.
+ERROR 2014-05-18 10:27:10 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 29, in _wrapped_view
+    resolve_url(login_url or settings.LOGIN_URL))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 151, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 496, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 382, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 297, in reverse_dict
+    self._populate()
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 286, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 104, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import django.views.generic.simple.redirect_to. Parent module django.views.generic.simple does not exist.
+ERROR 2014-05-18 10:27:11 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /favicon.ico status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "E:\Program Files\Python27\lib\site-packages\django\middleware\common.py", line 69, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "E:\Program Files\Python27\lib\site-packages\django\utils\functional.py", line 31, in wrapper
+    result = func(*args)
+  File "E:\Program Files\Python27\lib\site-packages\django\core\urlresolvers.py", line 104, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import django.views.generic.simple.redirect_to. Parent module django.views.generic.simple does not exist.
+ERROR 2014-05-18 11:00:46 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\account.py", line 28, in userlogin
+    'captcha':captcha},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:00:59 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\account.py", line 28, in userlogin
+    'captcha':captcha},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:03:06 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\account.py", line 28, in userlogin
+    'captcha':captcha},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:09:58 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/8fc19da751b07b70a3c3fb83f127fc707a97dacf/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "PNG")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
+ERROR 2014-05-18 11:10:32 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/4717827c7c7cd1276dd1b3647ba30be959dff0f6/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "PNG")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
+ERROR 2014-05-18 11:14:00 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/4717827c7c7cd1276dd1b3647ba30be959dff0f6/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "PNG")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
+ERROR 2014-05-18 11:19:01 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:19:07 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:19:09 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:19:24 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/4717827c7c7cd1276dd1b3647ba30be959dff0f6/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "gif")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'GIF'
+ERROR 2014-05-18 11:20:46 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/4717827c7c7cd1276dd1b3647ba30be959dff0f6/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "jpeg")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'JPEG'
+ERROR 2014-05-18 11:21:05 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/4717827c7c7cd1276dd1b3647ba30be959dff0f6/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "png")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
+ERROR 2014-05-18 11:31:09 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:31:46 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:32:05 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:32:39 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\软件开发\python 库存管理\ComPerformance-master (1)\ComPerformance-master\webadmin\engine\views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 11:56:09 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/student/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\student.py", line 22, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:21:27 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /grade/importgrades/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\grade.py", line 80, in importgrades
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:21:32 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/class/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\class.py", line 21, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:22:52 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /ajax/view_assessments_list/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\assessment.py", line 169, in view_assessments_list
+    assessmentrows = assessmentrows[startRecord:endRecord]
+  File "E:\Program Files\Python27\lib\site-packages\django\db\models\query.py", line 198, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.
+ERROR 2014-05-18 12:23:00 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/class/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\class.py", line 21, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:23:41 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/class/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\class.py", line 21, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:23:46 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/class/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\class.py", line 21, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:24:17 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/class/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\class.py", line 21, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:24:49 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/student/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\student.py", line 22, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:26:37 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/assessment/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\assessment.py", line 25, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:27:06 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/assessment/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\assessment.py", line 25, in index
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:28:17 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /ajax/view_assessments_list/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\assessment.py", line 169, in view_assessments_list
+    assessmentrows = assessmentrows[startRecord:endRecord]
+  File "E:\Program Files\Python27\lib\site-packages\django\db\models\query.py", line 198, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.
+ERROR 2014-05-18 12:28:30 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /grade/importgrades/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\grade.py", line 80, in importgrades
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:29:42 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/behavior/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\activity.py", line 24, in behavior
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+ERROR 2014-05-18 12:31:43 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /manage/comperformance_setup/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 25, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\engine\comperformance.py", line 28, in comperformance_setup
+    'username':username},context_instance = RequestContext(request))
+  File "E:\Program Files\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader.py", line 177, in render_to_string
+    return t.render(context_instance)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 140, in render
+    return self._render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\debug.py", line 74, in render_node
+    return node.render(context)
+  File "E:\Program Files\Python27\lib\site-packages\django\template\defaulttags.py", line 404, in render
+    raise NoReverseMatch("'url' requires a non-empty first argument. "
+NoReverseMatch: 'url' requires a non-empty first argument. The syntax changed in Django 1.5, see the docs.
+WARNING 2014-05-18 12:36:36 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /captcha/verify/ status_code:404
+WARNING 2014-05-18 12:38:46 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /captcha/verify/ status_code:404
+ERROR 2014-05-18 12:40:37 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/200b7eb0bdc7f39125218bd5d759c751e7b76304/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "png")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
+ERROR 2014-05-18 12:41:01 E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /captcha/image/20dcd292c06023e47adf4083f97ca51497e5507c/ status_code:500
+Traceback (most recent call last):
+  File "E:\Program Files\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:\svn\ComPerformance-master\ComPerformance-master\webadmin\captcha\views.py", line 80, in captcha_image
+    image.save(out, "png")
+  File "E:\Program Files\Python27\lib\site-packages\PIL\Image.py", line 1555, in save
+    save_handler = SAVE[format.upper()] # unknown format
+KeyError: 'PNG'
